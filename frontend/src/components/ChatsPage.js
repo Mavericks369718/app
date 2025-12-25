@@ -174,7 +174,7 @@ const ChatsPage = () => {
           <div className="max-w-4xl mx-auto py-8">
             {!currentChat || currentChat.messages.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center py-20">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-4">
+                <div className="w-16 h-16 bg-gray-900 rounded-2xl flex items-center justify-center mb-4">
                   <Send className="w-8 h-8 text-white" />
                 </div>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-2">
