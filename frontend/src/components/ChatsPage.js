@@ -286,7 +286,7 @@ const ChatsPage = () => {
               <Button
                 onClick={handleSend}
                 disabled={!input.trim() || isGenerating}
-                className="bg-blue-600 hover:bg-blue-700 h-[52px] px-5"
+                className="bg-gray-900 hover:bg-gray-800 h-[52px] px-5"
               >
                 <Send className="w-4 h-4" />
               </Button>
