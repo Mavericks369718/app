@@ -174,7 +174,7 @@ const Sidebar = () => {
         <div className="p-4 border-t border-gray-200">
           <div className="text-xs text-gray-500">
             <div>Version 1.0.0</div>
-            <a href="#" className="text-blue-600 hover:underline mt-1 inline-block">
+            <a href="#" className="text-gray-900 hover:underline mt-1 inline-block">
               Help & About
             </a>
           </div>
