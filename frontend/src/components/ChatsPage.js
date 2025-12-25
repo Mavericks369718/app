@@ -44,7 +44,7 @@ const ChatMessage = ({ message }) => {
         <div
           className={`rounded-2xl px-4 py-3 ${
             isUser
-              ? 'bg-blue-600 text-white'
+              ? 'bg-gray-900 text-white'
               : 'bg-gray-100 text-gray-900'
           }`}
         >
