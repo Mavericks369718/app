@@ -89,7 +89,7 @@ const Sidebar = () => {
               onClick={() => setCurrentPage('chats')}
               className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 currentPage === 'chats'
-                  ? 'bg-blue-50 text-blue-600 border-l-2 border-blue-600'
+                  ? 'bg-gray-900 text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
@@ -100,7 +100,7 @@ const Sidebar = () => {
               onClick={() => setCurrentPage('models')}
               className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 currentPage === 'models'
-                  ? 'bg-blue-50 text-blue-600 border-l-2 border-blue-600'
+                  ? 'bg-gray-900 text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
@@ -111,7 +111,7 @@ const Sidebar = () => {
               onClick={() => setCurrentPage('settings')}
               className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 currentPage === 'settings'
-                  ? 'bg-blue-50 text-blue-600 border-l-2 border-blue-600'
+                  ? 'bg-gray-900 text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
