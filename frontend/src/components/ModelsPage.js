@@ -177,11 +177,11 @@ const ModelsPage = () => {
             <p className="text-sm text-gray-600">Pick and manage models that run on your device</p>
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6">
             <div className="flex items-start space-x-3">
               <div className="flex-1">
-                <p className="text-sm font-medium text-blue-900 mb-1">Your Device</p>
-                <p className="text-sm text-blue-700">
+                <p className="text-sm font-medium text-gray-900 mb-1">Your Device</p>
+                <p className="text-sm text-gray-700">
                   Estimated: {deviceInfo.ram} RAM, {deviceInfo.vram} VRAM – {deviceInfo.recommendation}
                 </p>
               </div>
