@@ -298,8 +298,9 @@ const ChatsPage = () => {
         </div>
       </div>
 
-      <div className="hidden xl:flex w-72 border-l border-gray-200 bg-gray-50 p-6">
-        <div className="w-full">
+      {/* Right panel (model info & performance) */}
+      <div className="hidden xl:flex w-72 border-l border-gray-200 bg-gray-50 flex-col">
+        <div className="p-6 border-b border-gray-200">
           <h3 className="text-sm font-semibold text-gray-900 mb-4">Current Model</h3>
           {currentModel ? (
             <div className="space-y-4">
@@ -338,6 +339,87 @@ const ChatsPage = () => {
           ) : (
             <p className="text-sm text-gray-600">No model selected</p>
           )}
+        </div>
+
+        {/* Performance Monitor */}
+        <div className="p-6 flex-1 overflow-auto">
+          <h3 className="text-sm font-semibold text-gray-900 mb-4">Performance</h3>
+          <div className="space-y-4">
+            {/* CPU Usage */}
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-medium text-gray-900">CPU</span>
+                <span className="text-xs text-gray-600">42%</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div className="bg-gray-900 h-2 rounded-full" style={{ width: '42%' }}></div>
+              </div>
+            </div>
+
+            {/* GPU Usage */}
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-medium text-gray-900">GPU</span>
+                <span className="text-xs text-gray-600">68%</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div className="bg-gray-900 h-2 rounded-full" style={{ width: '68%' }}></div>
+              </div>
+            </div>
+
+            {/* RAM Usage */}
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-medium text-gray-900">RAM</span>
+                <span className="text-xs text-gray-600">8.2 / 16 GB</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div className="bg-gray-900 h-2 rounded-full" style={{ width: '51%' }}></div>
+              </div>
+            </div>
+
+            {/* VRAM Usage */}
+            <div>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-medium text-gray-900">VRAM</span>
+                <span className="text-xs text-gray-600">4.1 / 6 GB</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div className="bg-gray-900 h-2 rounded-full" style={{ width: '68%' }}></div>
+              </div>
+            </div>
+
+            {/* Temperature */}
+            <div className="pt-3 border-t border-gray-200">
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs">
+                  <span className="text-gray-600">CPU Temp:</span>
+                  <span className="font-medium text-gray-900">62°C</span>
+                </div>
+                <div className="flex justify-between text-xs">
+                  <span className="text-gray-600">GPU Temp:</span>
+                  <span className="font-medium text-gray-900">71°C</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Terminal Output */}
+            <div className="pt-3 border-t border-gray-200">
+              <p className="text-xs font-medium text-gray-900 mb-2">Terminal</p>
+              <div className="bg-gray-900 rounded-lg p-3 font-mono text-xs text-green-400 h-32 overflow-y-auto">
+                <div className="space-y-1">
+                  <div className="text-gray-500">[12:34:21]</div>
+                  <div>Model loaded: Llama 3 8B</div>
+                  <div className="text-gray-500">[12:34:23]</div>
+                  <div>Inference started...</div>
+                  <div className="text-gray-500">[12:34:24]</div>
+                  <div>Tokens/sec: 42.3</div>
+                  <div className="text-gray-500">[12:34:25]</div>
+                  <div>Response complete</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
