@@ -130,7 +130,7 @@ const ModelCard = ({ model, onInstall, onDelete, onSetDefault, isDefault }) => {
       ) : (
         <Button
           onClick={handleInstall}
-          className="w-full bg-blue-600 hover:bg-blue-700"
+          className="w-full bg-gray-900 hover:bg-gray-800"
           size="sm"
           disabled={model.compatibility === 'heavy'}
         >
